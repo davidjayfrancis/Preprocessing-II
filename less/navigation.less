@@ -1,1 +1,33 @@
 // Navigation Styles here
+.nav-bar {
+    height: 100px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    .title {
+        max-width: 400px;
+        width: 50%;
+    }
+}
+.long-line {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px dashed @silver;
+
+}
+.nav-links {
+    max-width: 400px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        color: @font-color;
+        &:hover {
+            color: grey;
+        }
+    }
+}

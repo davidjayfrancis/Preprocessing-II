@@ -1,1 +1,30 @@
 // Mixins in here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+//parametric shit down here
+
+.sick-ass-button(@width, @height, @border-radius) {
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    background: @eastern-blue;
+    color: white;
+    line-height:2rem;
+    font-size: 2rem;    
+    margin: 0 auto;
+    }
+
+.dave-btn {
+    .sick-ass-button(80%, 40px, 8%);
+    &:hover {
+        background: lighten(@eastern-blue,20%);
+    }
+}
