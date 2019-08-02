@@ -1,1 +1,42 @@
 // Navigation Styles here
+.nav-bar {
+    height: 100px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title {
+        max-width: 400px;
+        width: 50%;
+    }
+}
+.long-line {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px dashed @silver;
+
+}
+.nav-links {
+    max-width: 400px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    @media @mobile {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: @font-color;
+        &:hover {
+            color: grey;
+        }
+    }
+}
